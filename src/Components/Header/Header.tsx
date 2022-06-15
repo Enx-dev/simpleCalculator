@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Container, HeaderWrapper, Toggle, ToggleBall } from "./Styled";
 import { useAppDispatch } from "../../app/store/store";
 import { setTheme } from "../../app/slice/slice";
-type Props = {};
 
-const Header = (props: Props) => {
+const Header = () => {
   const [value, setValue] = useState("1");
   const dispatch = useAppDispatch();
   const changeTheme = (n: string) => {

@@ -1,6 +1,6 @@
 // import { getValue } from "@testing-library/user-event/dist/utils";
-import React, { useEffect, useState } from "react";
-import { useAppSelector, useAppDispatch } from "../../app/store/store";
+import React from "react";
+import { useAppSelector} from "../../app/store/store";
 import { ScreenWrapper, Text } from "./styled";
 import { getVal1, getVal2, getTotal, getCurrent } from "../../app/slice/slice";
 type Props = {};
@@ -11,7 +11,6 @@ const Screen = (props: Props) => {
   const total = useAppSelector(getTotal);
   const current = useAppSelector(getCurrent);
 
-  console.log(current);
   return (
     <ScreenWrapper>
       {current === "val1" ? (
