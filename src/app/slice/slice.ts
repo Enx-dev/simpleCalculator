@@ -61,7 +61,6 @@ const Arithmethic = createSlice({
           return;
         }
       }
-      console.log(action.payload);
       const toArr = state.val2.split("");
       toArr.push(action.payload);
       state.val2 = toArr.join("");
